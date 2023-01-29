@@ -1,11 +1,24 @@
-#wow {
-  background-color: #00FF00;
-  height: 100%;
-  width: 100%;
-  color: rgb(225, 0, 255);
-  font-size: 3em;
-  margin: 0;
-  padding: 10px;
-  box-sizing: border-box;
-  position: absolute;
+.flex {
+  display: flex;
+  flex-direction: column;
+  .row {
+    display: flex;
+    margin: 4px;
+    align-items: center;
+    font-size: 0.75em;
+    .square {
+      height: 160px;
+      width: 160px;
+      margin-right: 4px;
+      &.sq1 {
+        background-color: rgb(96, 130, 182);
+      }
+      &.sq2 {
+        background-color: rgb(160, 168, 205);
+      }
+      &.sq3 {
+        background-color: rgb(70, 130, 180);
+      }
+    }
+  }
 }
